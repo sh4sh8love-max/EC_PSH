@@ -43,7 +43,7 @@ class_info = {
         "교수": "이종성",
         "강의실": "101동 507호"
     }
-
+}
 st.write("## 수업 정보 (st.json)")
 st.json(class_info)
 
