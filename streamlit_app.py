@@ -18,7 +18,6 @@ timetable = pd.DataFrame({
     "8교시": ["","빅데이터개론","","사회복지행정",""],
     "9교시": ["","","","사회복지행정",""]
 })
-
 st.table(timetable)
 
 st.write("## 수업 정보 (st.json)")
