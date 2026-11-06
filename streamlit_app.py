@@ -10,5 +10,5 @@ data = pd.DataFrame({
     "lon": [129.1635],
 })
 
-st.write("가보고 싶은 장소(부산 해운대구")
+st.write("가보고 싶은 장소(부산 해운대구)")
 st.map(data)
