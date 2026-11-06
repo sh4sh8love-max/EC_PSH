@@ -2,27 +2,26 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-# 단순한 텍스트를 표시
-st.text("Hello, Streamlit!")
+import streamlit as st
 
-# Markdown 문법을 지원하여 헤더, 볼드, 이탤릭, 하이퍼링크 등 다양한 텍스트 스타일 가능
-st.markdown("# 헤더 1")
-st.markdown("## 헤더 2")
-st.markdown("**굵은 텍스트**")
-st.markdown("_기울임 텍스트_")
-st.markdown("[링크로 이동](https://streamlit.io)")
+st.title("나의 소개 페이지")
 
-# write()함수는 다목적 함수로 텍스트, 마크다운, 데이터, 객체 등 다양한 요소를 자동으로 감지하여 인식함
-st.write("# 제목") 
-st.write("Hello, Streamlit!")
-st.write("**굵은 텍스트**와 *기울임 텍스트*를 함께 사용할 수 있습니다.")
-st.write(12345)                        # 숫자
-st.write({"이름": "홍길동", "나이": 23})   # 딕셔너리
-st.write(pd.DataFrame({"A": [1,2,3]})) # 데이터프레임
+st.header("자기소개")
+st.text("안녕하세요, 제 이름은 박수혁입니다.")
+st.markdown("저는 **기계학습**과 *게임*에 관심이 있습니다.")
 
-st.title("대제목")
-st.header("중제목")
-st.subheader("소제목")
-st.caption("설명 텍스트")
-st.code("print('Hello')", language="python")
-st.latex(r"E = mc^2")
+st.subheader("좋아하는 것")
+st.markdown("저는 노래와 게임을 좋아합니다.")
+st.markdown(
+    "가장 자주 방문하는 사이트는 "
+    "[서울대학교 etl](https://etl.snu.ac.kr/) 입니다."
+)
+
+st.subheader("앞으로의 목표")
+st.markdown("앞으로 다양한 프로젝트를 진행하면서 컴퓨터와 관련된 흥미로운 활동을 계속해나가고 싶습니다.")
+
+st.caption("제가 좋아하는 게임")
+st.markdown("롤, 철권, 엘든링, 마인크래프트")
+
+st.caption("피타고라스 정리")
+st.latex(r"a^2 + b^2 = c^2")
